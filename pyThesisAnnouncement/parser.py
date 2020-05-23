@@ -7,19 +7,21 @@ def readContent(conf):
 
     introStart = "beginIntroduction["
     introEnd = "]endIntroduction"
-    intro = content[content.find(introStart)+len(introStart):content.find(introEnd)]
+    intro = content[content.find(introStart)+len(introStart):content.find(introEnd)].strip()
+    if intro != "":
+        confContent["intro"] = intro
 
     leftColStart = "beginLeftColumn["
     leftColEnd = "]endLeftColumn"
-    leftColumn = content[content.find(leftColStart)+len(leftColStart):content.find(leftColEnd)]
+    leftColumn = content[content.find(leftColStart)+len(leftColStart):content.find(leftColEnd)].strip()
+    if leftColumn != "":
+        confContent["leftColumn"] = leftColumn
 
     rightColStart = "beginRightColumn["
     rightColEnd = "]endRightColumn"
-    rightColumn = content[content.find(rightColStart)+len(rightColStart):content.find(rightColEnd)]
-
-    confContent["intro"] = intro
-    confContent["leftColumn"] = leftColumn
-    confContent["rightColumn"] = rightColumn
+    rightColumn = content[content.find(rightColStart)+len(rightColStart):content.find(rightColEnd)].strip()
+    if rightColumn != "":
+        confContent["rightColumn"] = rightColumn
 
     return confContent
 
@@ -49,11 +51,20 @@ def readConf(confPath):
 
     confVars = {**confVars, **readContent(conf)}
 
-    if confVars["colorTheme"] == None:
+    if confVars["colorTheme"] == False:
         raise ValueError("Please insert a colorTheme")
 
-    if confVars["mainTitle"] == None:
+    if confVars["mainTitle"] == False:
         raise ValueError("Please insert a mainTitle")
+
+    if confVars["intro"] == False:
+        raise ValueError("Empty introduction text.")
+
+    if confVars["leftColumn"] == False:
+        raise ValueError("Your content for the left column appears to be emtpy.")
+
+    if confVars["rightColumn"] == False:
+        raise ValueError("Your content for the right column appears to be emtpy.")
 
     conf.close()
     return confVars
