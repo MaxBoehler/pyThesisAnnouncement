@@ -11,10 +11,10 @@ mainTitle = This is the test of the script
 subTitle = I think this should work.
 
 ### Contact
-name = Max Böhler
-webpage = cce.uni-wuppertal.de
-mail = max.boehler@uni-wuppertal.de
-place = Wuppertal
+name = CONTACT NAME
+webpage = CONTACT URL
+mail = CONTACT MAIL
+place = CONTACT PLACE
 
 ### Content
 # Intro
