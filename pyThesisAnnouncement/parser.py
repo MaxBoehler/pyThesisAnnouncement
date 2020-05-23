@@ -54,16 +54,16 @@ def readConf(confPath):
     if confVars["colorTheme"] == False:
         raise ValueError("Please insert a colorTheme")
 
-    if confVars["mainTitle"] == False:
+    elif confVars["mainTitle"] == False:
         raise ValueError("Please insert a mainTitle")
 
-    if confVars["intro"] == False:
+    elif confVars["intro"] == False:
         raise ValueError("Empty introduction text.")
 
-    if confVars["leftColumn"] == False:
+    elif confVars["leftColumn"] == False:
         raise ValueError("Your content for the left column appears to be emtpy.")
 
-    if confVars["rightColumn"] == False:
+    elif confVars["rightColumn"] == False:
         raise ValueError("Your content for the right column appears to be emtpy.")
 
     conf.close()
