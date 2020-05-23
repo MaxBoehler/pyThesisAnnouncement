@@ -1,6 +1,6 @@
 # Leave variable empty if it should not appear in tex file
 
-### General
+### General (required)
 # FZ color in RGB: 18,63,106
 # BUW Color in RGB: 127,186,23
 type = BACHELORTHESIS / MASTERTHESIS / PhD
@@ -10,13 +10,13 @@ colorTheme = 127,186,23
 mainTitle = MAIN TITLE (required)
 subTitle = SUBTITLE (optional)
 
-### Contact
+### Contact (optional)
 name = CONTACT NAME
 webpage = CONTACT URL
 mail = CONTACT MAIL
 place = CONTACT PLACE
 
-### Content
+### Content (required)
 # Intro
 beginIntroduction[
 
