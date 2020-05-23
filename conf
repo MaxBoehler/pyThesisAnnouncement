@@ -1,0 +1,55 @@
+# Leave variable empty if it should not appear in tex file
+
+### General
+# FZ color in RGB: 18,63,106
+# BUW Color in RGB: 127,186,23
+type = BACHELORTHESIS
+colorTheme = 127,186,23
+
+### Title
+mainTitle = This is the test of the script
+subTitle = I think this should work.
+
+### Contact
+name = Max Böhler
+webpage = cce.uni-wuppertal.de
+mail = max.boehler@uni-wuppertal.de
+place = Wuppertal
+
+### Content
+# Intro
+beginIntroduction[
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+officia deserunt mollit anim id est laborum.
+
+]endIntroduction
+
+# Left column content
+beginLeftColumn[
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.
+\begin{enumerate}
+\itemsep0em
+\item Item 1
+\item Item 2
+\item Item 3
+\item Item 4
+\item Item 5
+\item Item 4
+\item Item 5
+\end{enumerate}
+ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorm ipsum dolor sit amet.
+
+]endLeftColumn
+
+# Right column content
+beginRightColumn[
+
+Lorm ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+\includegraphics[width=\columnwidth]{img/example.pdf}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+
+]endRightColumn

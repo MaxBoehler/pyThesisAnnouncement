@@ -1,0 +1,125 @@
+\documentclass[12pt]{article}
+
+\usepackage{geometry}
+ \geometry
+  {
+ a4paper,
+ total={170mm,260mm},
+ left=20mm,
+ top=0mm,
+ }
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\usepackage{lmodern}
+\usepackage{graphicx}
+\usepackage{tcolorbox}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\definecolor{DocumentColor}{RGB}{127,186,23}
+\usepackage{multicol}
+\setlength{\columnsep}{1cm}
+
+\renewcommand{\familydefault}{\sfdefault}
+
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{}
+
+\fancyfoot[C]
+{
+\vspace{0.3cm}
+\includegraphics[width=0.3cm]{img/person.pdf} Max Böhler \hspace{0.3cm}
+\includegraphics[width=0.3cm]{img/www.pdf} cce.uni-wuppertal.de \hspace{0.3cm}
+\includegraphics[width=0.3cm]{img/mail.pdf} max.boehler@uni-wuppertal.de \hspace{0.3cm}
+\includegraphics[width=0.3cm]{img/place.pdf} Wuppertal 
+}
+
+
+\renewcommand{\footrulewidth}{1pt}
+\futurelet\TMPfootrule\def\footrule{{\color{DocumentColor}\TMPfootrule}}
+
+\begin{document}
+\setlength\parindent{0pt}
+
+
+\begin{center}
+  \makebox[\textwidth]{\includegraphics[width=\paperwidth]{img/header.png}}
+\end{center}
+
+\vspace{1cm}
+
+{
+\fontsize{22pt}{22pt}\selectfont
+BACHELORTHESIS
+}
+
+\begin{center}
+  \makebox[\textwidth]
+  {
+  \begin{tcolorbox}[
+  			width=\paperwidth,
+  			colback={DocumentColor},
+  			opacityframe=.0,
+  			arc=0mm,
+  			height=4cm,
+  			coltext=white,
+  			]
+  			\vspace{0.4cm}
+  			\hspace{1.4cm}
+  			\begin{minipage}[l]{0.85\textwidth}
+  			{
+  				\fontsize{22pt}{22pt}\selectfont
+				\textbf{This is the test of the script}\\
+\rule{\textwidth}{1.0pt}\\[0.4cm]
+I think this should work.
+
+			}
+
+  			\end{minipage}
+  \end{tcolorbox}
+  }
+\end{center}
+
+
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+officia deserunt mollit anim id est laborum.
+
+
+%
+\vspace{0.4cm}
+%
+\begin{multicols*}{2}
+
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.
+\begin{enumerate}
+\itemsep0em
+\item Item 1
+\item Item 2
+\item Item 3
+\item Item 4
+\item Item 5
+\item Item 4
+\item Item 5
+\end{enumerate}
+ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorm ipsum dolor sit amet.
+
+
+
+\columnbreak
+
+
+
+Lorm ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+\includegraphics[width=\columnwidth]{img/example.pdf}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+
+
+
+\end{multicols*}
+\end{document}

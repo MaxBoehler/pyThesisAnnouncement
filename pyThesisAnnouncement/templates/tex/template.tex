@@ -1,0 +1,91 @@
+\documentclass[12pt]{article}
+
+\usepackage{geometry}
+ \geometry
+  {
+ a4paper,
+ total={170mm,260mm},
+ left=20mm,
+ top=0mm,
+ }
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\usepackage{lmodern}
+\usepackage{graphicx}
+\usepackage{tcolorbox}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\definecolor{DocumentColor}{RGB}{%%COLORTHEME%%}
+\usepackage{multicol}
+\setlength{\columnsep}{1cm}
+
+\renewcommand{\familydefault}{\sfdefault}
+
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{}
+
+\fancyfoot[C]
+{
+\vspace{0.3cm}
+%%CONTACT%%
+}
+
+
+\renewcommand{\footrulewidth}{1pt}
+\futurelet\TMPfootrule\def\footrule{{\color{DocumentColor}\TMPfootrule}}
+
+\begin{document}
+\setlength\parindent{0pt}
+
+
+\begin{center}
+  \makebox[\textwidth]{\includegraphics[width=\paperwidth]{img/header.png}}
+\end{center}
+
+\vspace{1cm}
+
+{
+\fontsize{22pt}{22pt}\selectfont
+%%TYPE%%
+}
+
+\begin{center}
+  \makebox[\textwidth]
+  {
+  \begin{tcolorbox}[
+  			width=\paperwidth,
+  			colback={DocumentColor},
+  			opacityframe=.0,
+  			arc=0mm,
+  			height=%%TITLEHEIGHT%%,
+  			coltext=white,
+  			]
+  			\vspace{0.4cm}
+  			\hspace{1.4cm}
+  			\begin{minipage}[l]{0.85\textwidth}
+  			{
+  				\fontsize{22pt}{22pt}\selectfont
+				%%TITLE%%
+			}
+
+  			\end{minipage}
+  \end{tcolorbox}
+  }
+\end{center}
+
+%%INTRO%%
+%
+\vspace{0.4cm}
+%
+\begin{multicols*}{2}
+%%LEFTCOLUMN%%
+
+\columnbreak
+
+%%RIGHTCOLUMN%%
+
+\end{multicols*}
+\end{document}
