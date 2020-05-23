@@ -3,12 +3,12 @@
 ### General
 # FZ color in RGB: 18,63,106
 # BUW Color in RGB: 127,186,23
-type = BACHELORTHESIS
+type = BACHELORTHESIS / MASTERTHESIS / PhD
 colorTheme = 127,186,23
 
 ### Title
-mainTitle = This is the test of the script
-subTitle = I think this should work.
+mainTitle = MAIN TITLE (required)
+subTitle = SUBTITLE (optional)
 
 ### Contact
 name = CONTACT NAME
