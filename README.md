@@ -13,4 +13,4 @@ If you do not have installed ```pdflatex``` on your system, the program will onl
 
 *(Note: All images must be ```.png``` or ```.jpeg``` files.)*
 
-If you just want to see what the program will do, then just run ```python3 createAnnouncement.py```. Example images and text already exists.
+If you just want to see what the program will do, then just run ```python3 createAnnouncement.py```. Example images and text already exist.
